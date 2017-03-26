@@ -1,0 +1,11 @@
+; this is the meta-language abstraction for lice
+
+(def parse str (|>
+  (for-each i (->chars str) (when
+    (=== i )))))
+
+
+
+
+
+
