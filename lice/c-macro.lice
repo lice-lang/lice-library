@@ -4,8 +4,8 @@
 (undef def?)
 
 ; C style #define
-(alias def define)
-(undef def)
+(alias defexpr define)
+(undef defexpr)
 
 ; C style #include
 (alias load include)

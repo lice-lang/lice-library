@@ -1,5 +1,5 @@
 ; (load-file "sample/demos/gui-apis.lice")
-(load "lice/math.lice")
+(load "D:\git-repos\lice-library\lice\math.lice")
 
 (-> img (image 400 400))
 
@@ -28,7 +28,7 @@
 
 (show-image img)
 
-(write-file (file "save.png"), img)
+;(write-file (file "save.png"), img)
 
 ; the output
 ;
