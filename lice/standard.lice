@@ -1,0 +1,12 @@
+;
+; standard library
+;
+
+(def println str (print str "
+"))
+
+(def println-err str (print-err str "
+"))
+
+(load-file (str-con FILE_PATH "math.lice"))
+

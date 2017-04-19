@@ -15,7 +15,8 @@
   ret))
 
 
-; (println "result: " (exp-mod 23 2 6))
+(println "result: " (exp-mod 23 2 26))
+(println "result: " (exp-mod 21 4 26))
 
 ; try fermat test
 (def try-it a n
