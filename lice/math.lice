@@ -5,7 +5,7 @@
 ; constants
 
 (-> PI 3.14159265358979323846)
-
+(alias PI π)
 (-> E  2.7182818284590452354)
 
 ; real functions
@@ -20,8 +20,6 @@
   (if (== b 0)
       a
       (gcd b (% a b))))
-
-; (def )
 
 ; (def expt)
 
@@ -70,7 +68,7 @@
 
 ; trigonometric functions
 
-(def cos a (sin (- 1.570796326 a)))
+(def cos a (sin (- (/ PI 2) a)))
 (def csc a (/ 1 (sin a)))
 (def sec a (/ 1 (cos a)))
 (def tan a (/ (sin a) (cos a)))

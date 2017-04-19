@@ -1,15 +1,21 @@
 ; standard lib
 
+(def println str (print str "\n"))
+
+(def println-err str (print-err str "\n"))
+
 (def ! a (if a false true))
-
 (def null? a (=== null a))
-(def !null a (not (null? a)))
-(def !empty? a (not (empty? a)))
+(def !null a (! (null? a)))
 
+(def empty? a (> (size a) 0))
+(def !empty? a (! (empty? a)))
+
+(def in? ls a (> (count ls a) 0))
+(def !in? ls a (! (in? ls a)))
 (alias in? contains?)
+(alias !in? !contains?)
 
-; not lazy
-; (def unless condition a b (if condition b a))
+(defexpr unless condition a b (if condition b a))
 
-; not lazy
-; (def until condition a (while (! condition) a))
+(defexpr until condition a (while (! condition) a))

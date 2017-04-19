@@ -1,9 +1,13 @@
+(-> path "D:/git-repos/lice-library/lice/math.lice")
+
 ; (load-file "sample/demos/gui-apis.lice")
-(load "D:\git-repos\lice-library\lice\math.lice")
+(load-file path)
 
 (-> img (image 400 400))
 
-(def fun x (+ (sin (/ x 5)) (cos (* x 5)) (cos x)))
+; (def fun x (+ (sin (/ x 5)) (cos (* x 5)) (cos x)))
+
+(def fun x (- (* x x) x x))
 
 (def pt x y
   (draw-point img x (+ y 150)))
