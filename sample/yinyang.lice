@@ -1,0 +1,7 @@
+(def run yin yang (|>
+  (yin)
+  (yang)
+  (run yin (lambda (|>
+                (yang)
+                (yang0))))))
+；

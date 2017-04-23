@@ -1,11 +1,6 @@
-; (require "lice.io")
-; (require "lice.str")
-
 ; evaluate this file
 
 (-> file (file (->str FILE_PATH)))
-
-; (print file)
 
 (load-file file)
 

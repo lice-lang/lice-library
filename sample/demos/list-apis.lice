@@ -1,4 +1,5 @@
 ; (load-file "sample/demos/list-apis.lice")
+
 (-> consed (list 1 2 3 4 4))
 
 (reverse consed)
@@ -43,9 +44,9 @@
        "Glavo"
        "AGS"))
 
-(head pairs)
+([| pairs)
 
-(tail pairs)
+(|] pairs)
 
 
 ; the output

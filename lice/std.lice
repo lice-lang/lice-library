@@ -1,5 +1,7 @@
 ; standard lib
 
+()
+
 (def println str (print str "\n"))
 
 (def println-err str (print-err str "\n"))
@@ -16,6 +18,8 @@
 (alias in? contains?)
 (alias !in? !contains?)
 
-(defexpr unless condition a b (if condition b a))
+(deflazy unless condition a b (if condition b a))
 
-(defexpr until condition a (while (! condition) a))
+(deflazy until condition a (while (! condition) a))
+
+(defexpr let name value body ((lazy name body) value))

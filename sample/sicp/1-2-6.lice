@@ -9,14 +9,13 @@
 
     (if (!= 0 (& b 1))
       (-> ret (% (* a ret) m)))
-    ; (println "b = " b)
     (-> b (/ b 2))
     (-> a (% (* a a) m))))
   ret))
 
 
-(println "result: " (exp-mod 23 2 26))
-(println "result: " (exp-mod 21 4 26))
+(println (str-con "result: " (exp-mod 23 2 26)))
+(println (str-con "result: " (exp-mod 21 4 26)))
 
 ; try fermat test
 (def try-it a n
@@ -32,7 +31,7 @@
 
 ; printing the result
 (def say n
-  (println n " => " (fermat-test n)))
+  (println (str-con n " => " (fermat-test n))))
 
 ; tests
 (force|>

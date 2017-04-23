@@ -1,5 +1,3 @@
-; (require "lice.thread")
-
 ; This is an example for
 ; the worst practise of for-each
 

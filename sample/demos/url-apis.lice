@@ -1,0 +1,8 @@
+(-> cnt 1)
+(def download link (|>
+  (write-file (file (str-con "fuck" cnt ".png")) (image (url link)))
+  (-> cnt (+ cnt 1))))
+
+(for-each i (.. 0 4)
+  (download (str-con "https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/13/" i ".png")))
+;

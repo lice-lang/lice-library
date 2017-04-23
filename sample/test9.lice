@@ -1,11 +1,6 @@
-; (print (require "lice.io"))
-; (require "lice.str")
-; (require "lice.thread")
-
 (for-each
   i
   (.. 1000 1500)
-;  (print i)
   (thread|> (force|>
     (println i)
     (write-file

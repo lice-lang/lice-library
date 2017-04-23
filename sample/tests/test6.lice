@@ -1,12 +1,9 @@
-; (require "lice.io")
-; (require "lice.str")
-
 ; initialize
 
-(if (! (file-exists? "save"))
-    (|> (write-file (file "save") "0")
-         (print "fuck"))
-    (print "shit")
+(unless (file-exists? "save")
+        (|> (write-file (file "save") "0")
+            (print "fuck"))
+        (print "shit")
 )
 
 ; read the file and get the value
